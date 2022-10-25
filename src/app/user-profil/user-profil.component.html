@@ -1,0 +1,11 @@
+<div class="profil">
+    <img [src]="user.photo"/>
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.firstname }}</p>
+    <button (click)="setIsHidden()">Affichez/Masquez mon âge
+    </button>
+    <p [hidden]="isHidden"> Age : {{ user.age }} </p>
+    <input [(ngModel)]="user.quote"/>
+    {{ user.quote }}
+    
+</div>
